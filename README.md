@@ -33,3 +33,30 @@ Version history
   * Adding trace levels to better control the traced content.
   * Net.MQTT.Client is now persistent. This is useful, when- for example- a REST interface is built on the top of the MQTT client.
   * Agent automatically tries to re-connect (once only), if the TCP connection to the broker seems to be broken.
+
+## Docker
+The example works in namespace USER    
+
+### Prerequisites
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+### Installation
+Clone/git pull the repo into any local directory
+```
+$ git clone https://github.com/rcemper/PR_MQTTClient.git
+```
+```
+$ docker compose up -d && docker compose logs -f
+```
+To open IRIS Terminal do:
+```
+$ docker-compose exec iris iris session iris
+USER>
+```
+or using **WebTerminal**    
+
+http://localhost:42773/terminal/
+     
+To access IRIS System Management Portal     
+    
+http://localhost:42773/csp/sys/UtilHome.csp
+  
